@@ -1,0 +1,55 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+.body{
+    background-color: aliceblue;
+    font-family: "Circular Spotify Tx T Black"
+}
+
+.header{
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+}
+
+.header, .h1{
+margin-left: auto;
+margin-right: auto;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+    margin: auto;
+    padding: 10px;
+}
+
+.h1{
+    font-size: 36px;
+}
+
+.h2{
+    font-size: 30px;
+}
+
+.h3{
+    font-size: 24px;
+}
+
+.h4{
+    font-size: 20px;
+}
+
+.h5{
+    font-size: 18px;
+}
+
+.table{
+    border-color: cadetblue;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    margin-right: auto;
+    margin-left: auto;
+}
