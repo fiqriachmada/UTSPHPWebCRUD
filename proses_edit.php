@@ -6,8 +6,9 @@ if (isset($_POST['update'])) {
     $Nama = $_POST['Nama'];
     $Umur = $_POST['Umur'];
     $Jenis_Kelamin = $_POST['Jenis_Kelamin'];
+    $No_Telp = $_POST['No_Telp'];
 
-    $sql = "UPDATE admin SET Nama='$Nama',Umur='$Umur',Jenis_Kelamin='$Jenis_Kelamin' WHERE ID=$ID";
+    $sql = "UPDATE admin SET Nama='$Nama',Umur='$Umur',Jenis_Kelamin='$Jenis_Kelamin',No_Telp='$No_Telp' WHERE ID=$ID";
     $query = mysqli_query($db, $sql);
 
     if ($query) {
