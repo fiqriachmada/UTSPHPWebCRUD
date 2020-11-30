@@ -17,6 +17,7 @@ include("connection.php");
             <a class="h5" href="add.php">Tambah user</a>
         </Button>
         <br>
+        <br>
         <thead>
             <tr>
                 <th>ID</th>
