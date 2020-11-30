@@ -36,6 +36,10 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td>No Telp</td>
+                <td><input type="text" name="No_Telp"></td>
+            </tr>
         </table>
         <br>
         <Button class="button h5" type="submit" name="Submit" value="Submit">Submit</Button>
@@ -52,9 +56,10 @@ if (isset($_POST['Submit'])) {
     $Nama = $_POST['Nama'];
     $Umur = $_POST['Umur'];
     $Jenis_Kelamin = $_POST['Jenis_Kelamin'];
+    $No_Telp = $_POST['No_Telp'];
 
     // Insert user data into table
-    $sql = "INSERT INTO admin(Nama, Umur, Jenis_Kelamin) VALUES('$Nama','$Umur','$Jenis_Kelamin')";
+    $sql = "INSERT INTO admin(Nama, Umur, Jenis_Kelamin,No_Telp) VALUES('$Nama','$Umur','$Jenis_Kelamin','No_Telp')";
     $query = mysqli_query($db, $sql);
     // Show message when user added
 
