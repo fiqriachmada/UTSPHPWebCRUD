@@ -40,9 +40,7 @@
             </tr>
             <tr>
                 <td>Nomer Telepon</td>
-                <td><input type="phone" name="No_Telp" pattern="[0-9]{4}-[0-9]{4}-[0-9]{6}" required>
-                    <small>Format: 123-456-7890</small>
-                </td>
+                <td><input type="phone" name="No_Telp">
             </tr>
             <tr>
                 <td>Email</td>
