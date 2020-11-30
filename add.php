@@ -1,5 +1,7 @@
-<html><!DOCTYPE html>
+<html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,8 +39,12 @@
                 </td>
             </tr>
             <tr>
-                <td>No Telp</td>
-                <td><input type="text" name="No_Telp"></td>
+                <td>Nomer Telepon</td>
+                <td><input type="phone" name="No_Telp"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="Email"></td>
             </tr>
         </table>
         <br>
@@ -57,9 +63,10 @@ if (isset($_POST['Submit'])) {
     $Umur = $_POST['Umur'];
     $Jenis_Kelamin = $_POST['Jenis_Kelamin'];
     $No_Telp = $_POST['No_Telp'];
+    $Email = $_POST['Email'];
 
     // Insert user data into table
-    $sql = "INSERT INTO admin(Nama, Umur, Jenis_Kelamin,No_Telp) VALUES('$Nama','$Umur','$Jenis_Kelamin','No_Telp')";
+    $sql = "INSERT INTO admin(Nama, Umur, Jenis_Kelamin, No_Telp, Email) VALUES('$Nama','$Umur','$Jenis_Kelamin','$No_Telp', '$Email')";
     $query = mysqli_query($db, $sql);
     // Show message when user added
 

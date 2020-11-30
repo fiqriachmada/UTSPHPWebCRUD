@@ -11,7 +11,7 @@
 <body class="body">
     <header class="header">
         <h1 class="h1">
-            Admin
+            Admin E-Commerce
         </h1>
     </header>
 

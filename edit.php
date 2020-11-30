@@ -55,8 +55,12 @@ if (mysqli_num_rows($query) < 1) {
                 </td>
             </tr>
             <tr>
-                <td>No_Telp</td>
-                <td><input type="text" name="No_Telp" value=<?php echo $admin['No_Telp'] ?>></td>
+                <td>Nomer Telepon</td>
+                <td><input type="phone" name="No_Telp" value=<?php echo $admin['No_Telp'] ?>></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="Email" value=<?php echo $admin['Email'] ?>></td>
             </tr>
         </table>
         <br>
@@ -76,8 +80,9 @@ if (isset($_POST['update'])) {
     $Umur = $_POST['Umur'];
     $Jenis_Kelamin = $_POST['Jenis_Kelamin'];
     $No_Telp = $_POST['No_Telp'];
+    $Email = $_POST['Email'];
 
-    $sql = "UPDATE admin SET Nama='$Nama',Umur='$Umur',Jenis_Kelamin='$Jenis_Kelamin',No_Telp='$No_Telp' WHERE ID=$ID";
+    $sql = "UPDATE admin SET Nama='$Nama',Umur='$Umur',Jenis_Kelamin='$Jenis_Kelamin',No_Telp='$No_Telp',Email='$Email' WHERE ID=$ID";
     $query = mysqli_query($db, $sql);
 
     if ($query) {

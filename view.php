@@ -23,7 +23,8 @@ include("connection.php");
                 <th>Nama</th>
                 <th>Umur</th>
                 <th>Jenis Kelamin</th>
-                <th>No Telp</th>
+                <th>Nomer Telepon</th>
+                <th>Email</th>
                 <th>Option</th>
             </tr>
         </thead>
@@ -40,6 +41,7 @@ include("connection.php");
                 echo "<td>" . $admin['Umur'] . "</td>";
                 echo "<td>" . $admin['Jenis_Kelamin'] . "</td>";
                 echo "<td>" . $admin['No_Telp'] . "</td>";
+                echo "<td>" . $admin['Email'] . "</td>";
                 
                 echo "<td>";
                 echo "<a href='edit.php?ID=" . $admin['ID'] . " '>Edit</a> | ";
