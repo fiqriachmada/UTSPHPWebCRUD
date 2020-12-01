@@ -14,15 +14,17 @@ if(isset($_COOKIE['pesan'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="body">
     <?php
     if(isset($_COOKIE["message"])){
         echo $_COOKIE["message"];
     }
     ?>
-    <h1>Login</h1>
+    <header class="header">
+        <h1 class="h1">Login</h1>
+    </header>
     <form action="loginconf.php" method="POST">
     <table>
         <tr>
