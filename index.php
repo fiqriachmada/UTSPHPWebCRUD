@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start();
+if(isset($_SESSION['username'])){
+}else{
+    header("location: login.php");
+}
 
+if(isset($_COOKIE['pesan'])){
+    echo $_COOKIE['pesan'];
+}
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +25,13 @@
     </header>
 
     <a class="h3" href="index.php">Dashboard</a>
-    <br>
-    <br>
+    <br />
+    <a class="h3" href="logout.php">Logout</a>
+    <br /><br />
+    
 
-    <?php
-    include('view.php');
-    ?>
+    <?php include('view.php'); ?>
+
 </body>
 
 </html>
