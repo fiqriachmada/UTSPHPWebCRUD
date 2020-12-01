@@ -19,8 +19,8 @@
     <br>
     <br>
 
-    <?php 
-    include('view.php'); 
+    <?php
+    include('view.php');
     ?>
 </body>
 

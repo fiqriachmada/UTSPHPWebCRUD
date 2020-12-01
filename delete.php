@@ -10,8 +10,7 @@ if (isset($_GET['ID'])) {
 
     if ($query) {
         header('Location: index.php');
-    }else{
+    } else {
         die("Gagal Menghapus");
     }
 }
-

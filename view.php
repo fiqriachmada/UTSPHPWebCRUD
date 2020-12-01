@@ -34,11 +34,12 @@ include("connection.php");
 
             $sql = "SELECT * FROM admin";
             $query = mysqli_query($db, $sql);
+            $no = 1;
 
             while ($admin = mysqli_fetch_array($query)) {
                 echo "<tr>";
 
-                echo "<td>" . $admin['ID'] . "</td>";
+                echo "<td>" . $no . "</td>";
                 echo "<td>" . $admin['Nama'] . "</td>";
                 echo "<td>" . $admin['Umur'] . "</td>";
                 echo "<td>" . $admin['Jenis_Kelamin'] . "</td>";
@@ -51,6 +52,7 @@ include("connection.php");
                 echo "</td>";
 
                 echo "</tr>";
+                $no++;
             }
             ?>
         </tbody>
