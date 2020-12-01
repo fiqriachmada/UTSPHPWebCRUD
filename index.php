@@ -16,11 +16,12 @@
     </header>
 
     <a class="h3" href="index.php">Dashboard</a>
-    <br /><br />
-    
+    <br>
+    <br>
 
-    <?php include('view.php'); ?>
-
+    <?php 
+    include('view.php'); 
+    ?>
 </body>
 
 </html>

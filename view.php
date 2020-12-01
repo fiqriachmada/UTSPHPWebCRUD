@@ -31,6 +31,7 @@ include("connection.php");
         </thead>
         <tbody>
             <?php
+
             $sql = "SELECT * FROM admin";
             $query = mysqli_query($db, $sql);
 
@@ -43,10 +44,10 @@ include("connection.php");
                 echo "<td>" . $admin['Jenis_Kelamin'] . "</td>";
                 echo "<td>" . $admin['No_Telp'] . "</td>";
                 echo "<td>" . $admin['Email'] . "</td>";
-                
+
                 echo "<td>";
                 echo "<a href='edit.php?ID=" . $admin['ID'] . " '>Edit</a> | ";
-                echo "<a href='delete.php?ID=" . $admin['ID'] . " '>Hapus</a>";
+                echo "<a href='javascript:hapusData(" . $admin['ID'] . ")'>Hapus</a>";
                 echo "</td>";
 
                 echo "</tr>";
@@ -54,6 +55,19 @@ include("connection.php");
             ?>
         </tbody>
     </table>
+    <script language="JavaScript" type="text/javascript">
+        var message = "Berhasil Dihapus";
+
+        function hapusData(ID) {
+            if (confirm("Apakah Anda yakin akan menghapus data ini?")) {
+                window.location.href = 'delete.php?ID=' + ID;
+                if ("OK") {
+                    alert(message);
+                }
+            }
+        }
+    </script>
 </body>
+
 
 </html>
