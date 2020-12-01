@@ -5,10 +5,6 @@ if(isset($_SESSION['username'])){
 }else{
     header("location: login.php");
 }
-
-if(isset($_COOKIE['pesan'])){
-    echo $_COOKIE['pesan'];
-}
 ?>
 <head>
     <meta charset="UTF-8">
