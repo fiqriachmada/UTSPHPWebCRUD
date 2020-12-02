@@ -20,6 +20,3 @@ if(!empty($data)){
     setcookie("Message","Maaf, Username atau Password salah",time()+3600);
     header("location: login.php");
 }
-
-
-?>

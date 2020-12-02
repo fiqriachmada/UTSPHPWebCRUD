@@ -14,7 +14,7 @@ if (isset($_POST['update'])) {
 
     if ($query) {
         header('Location: index.php');
-    }else{
+    } else {
         die("Error");
     }
 }
